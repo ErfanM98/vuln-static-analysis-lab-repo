@@ -68,7 +68,7 @@ if __name__ == "__main__":
     os.makedirs(DATA_DIR, exist_ok=True)
     if not os.path.exists(os.path.join(DATA_DIR, "notes.txt")):
         with open(os.path.join(DATA_DIR, "notes.txt"), "w", encoding="utf-8") as f:
-            f.write("This is a public note used by the lab application.\n")
+            f.write("This is a public note used by the lab application.\n ")
 
     init_db()
     app.run(debug=True)
